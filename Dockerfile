@@ -15,3 +15,7 @@ RUN chmod 755 /sbin/entrypoint.sh
 
 EXPOSE 3128/tcp
 ENTRYPOINT ["/sbin/entrypoint.sh"]
+
+ENV http_proxy=http://35.180.43.221:3128 \
+    https_proxy=http://35.180.43.221:3128 \
+    ftp_proxy=http://35.180.43.221:3128
